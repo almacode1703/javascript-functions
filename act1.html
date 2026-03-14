@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function - 1</title>
+
+    <style>
+        .result{
+            color: white;
+            padding : 1rem 2rem;
+            background-color: black;
+            border: 2px solid red;
+            max-width: fit-content;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    <button id="btn" onclick="addNums(5)">Display1</button>
+    <button id="btn" onclick="addNums(5,25)">Display2</button>
+
+    <script>
+        function addNums(x, y=10) {
+            document.getElementById("demo").innerHTML = x + y;
+            document.getElementById("demo").classList.add('result')
+        }
+    </script>
+
+
+</body>
+
+</html>
