@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function as Expression</title>
+
+    <style>
+        .result{
+            padding: 2rem;
+            background-color: black;
+            height:65px;
+            width:65px;
+            color:yellow;
+            font-size:60px;
+            border:2px solid;
+            border-radius: 50%;
+            box-shadow: 0px 2px 3px 0px lightgray;
+        }
+
+        button{
+            bottom: none;
+            background-color: lightgreen;
+            padding: 10px 14px;
+            font-size: 20px;
+            border-radius:4px;
+        }
+
+        button:hover{
+            cursor: pointer;
+            background-color: green;
+            color:white;
+            transition:0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="demo"></p>
+    <button onclick="addNumbs(10,20)">Add</button>
+
+    <script>
+      var addNumbs = function(x,y){
+        document.getElementById("demo").innerHTML = x+y;
+        document.getElementById("demo").classList.add('result');
+      }
+
+    </script>
+    
+</body>
+</html>
